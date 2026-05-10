@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>To Do App</h1>
+
+  <div class="input-row">
+    <input id="taskInput" placeholder="Add a new task..." />
+    <input type="date" id="dueDate" />
+    <select id="category">
+      <option>General</option>
+      <option>Work</option>
+      <option>Study</option>
+    </select>
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <div class="filters">
+    <button onclick="setFilter(event,'all')" class="active">All</button>
+    <button onclick="setFilter(event,'pending')">Pending</button>
+    <button onclick="setFilter(event,'completed')">Completed</button>
+  </div>
+
+  <input id="search" placeholder="Search tasks..." />
+
+  <ul id="taskList"></ul>
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

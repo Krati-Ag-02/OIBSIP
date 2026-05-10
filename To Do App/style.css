@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #e2e8f0;
+}
+
+/* CONTAINER */
+.app {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* HEADER */
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* INPUT */
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 150px 130px 100px;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.06);
+  color: white;
+}
+
+button {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+.filters button.active {
+  background: #22c55e;
+}
+
+/* SEARCH */
+#search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* TASK */
+li {
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.task-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-text {
+  font-size: 16px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* DELETE BUTTON */
+.actions button {
+  background: #ef4444;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* TOAST */
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #22c55e;
+  padding: 12px 16px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

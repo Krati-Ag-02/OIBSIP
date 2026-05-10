@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Authentication UI</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="auth-box">
+
+    <h1 id="formTitle">Create Account</h1>
+
+    <div class="input-group">
+      <i class="ri-user-line"></i>
+      <input type="text" id="name" placeholder="Full Name">
+    </div>
+
+    <div class="input-group">
+      <i class="ri-mail-line"></i>
+      <input type="email" id="email" placeholder="Email Address">
+    </div>
+
+    <div class="input-group">
+      <i class="ri-lock-line"></i>
+      <input type="password" id="password" placeholder="Password">
+
+      <span id="togglePassword">
+        <i class="ri-eye-line"></i>
+      </span>
+    </div>
+
+    <button id="submitBtn">
+      Sign Up
+    </button>
+
+    <p id="message"></p>
+
+    <div class="toggle-text">
+      Already have an account?
+      <span id="toggleForm">Login</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
