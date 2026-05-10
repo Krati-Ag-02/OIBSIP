@@ -4,10 +4,10 @@ This repository contains the tasks completed during the Oasis Infobyte Web Devel
 
 ## Tasks
 
-1. Advanced To-Do App
-2. Advanced Calculator
+1. To-Do App
+2. Calculator
 3. Tribute Page - Rani Lakshmibai
-4. Login Authentication UI
+4. Login Authentication 
 
 ## Technologies Used
 - HTML
